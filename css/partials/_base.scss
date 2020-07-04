@@ -1,6 +1,9 @@
 // normalize.css
 @import '../vendor/normalize/normalize.min.scss';
 
+// typer.css
+@use '../vendor/typer/typer';
+
 // bourbon mixins
 @import '../vendor/bourbon/bourbon';
 
