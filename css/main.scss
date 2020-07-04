@@ -1,0 +1,60 @@
+@import 'partials/base';
+@import 'partials/animation';
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+
+$base: 3.4rem; // --> 2.3rem on mobile
+body {
+    font-size: 2.1rem;
+    line-height: $base;
+    letter-spacing: 0.025em;
+    background: $base-bg;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+p {
+    margin-bottom: $base;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-text;
+    border-bottom: 0.125em solid $dark-text;
+    @include transition(background-color .25s ease-in-out, color .25s ease-in-out, opacity .25s ease-in-out, border-bottom .25s ease-in-out);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+// large-desktop
+@media only screen and (min-width: 1799px) {}
+
+// small desktop
+@media only screen and (max-width: 1024px) {}
+
+// large mobile
+@media only screen and (max-width: 768px) { $base: 2.3rem; }
+
+// small mobile
+@media only screen and (max-width: 320px) {}
